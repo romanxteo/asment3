@@ -1,0 +1,252 @@
+@media screen and (max-width: 767px) {
+  * {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+  }
+  .boder {
+    font-size: 200px;
+    border: 2px solid black;
+  }
+
+  body {
+    height: 2000px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  /* bonus */
+  .avatar-img {
+    display: none;
+  }
+
+  /*banner */
+
+  .banner {
+    position: relative;
+    height: 300px;
+  }
+  .banner-title {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    font-size: 40px;
+    color: black;
+  }
+  .banner-img {
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+  }
+  .more {
+    position: absolute;
+    top: 42%;
+    left: 38%;
+    color: black;
+  }
+
+  /* NavBar */
+  nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: flex-start;
+  }
+
+  nav > *:hover {
+    background-color: black;
+    color: white;
+  }
+
+  /* INFOR */
+  .bg-grey {
+    background-color: lightgrey;
+  }
+  #target {
+    background-color: lightgrey;
+  }
+  .target-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr ;
+    height: 590px;
+    padding: 0px;
+    width: 100%;
+  }
+  #target{
+    padding: 45px;
+  }
+  .info {
+    margin-left: 40px;
+  }
+
+  /* Job info */
+
+  .contentkn{
+    display: none;
+  }
+  .contentnn{
+    display: none;
+  }
+  .contentst{
+    display: none;
+  }
+  .contenthd{
+    display: none;
+  }
+  .contenhv{
+    display: none;
+  }
+  .contentkn{
+    display: none;
+  }
+  .container {
+    margin: 0 auto;
+    width: 600px;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 35px;
+    padding-top: 50px;
+    padding: 0px;
+  }
+
+  .col-sm-4 {
+    border: 1px solid black;
+  }
+
+  h2.title {
+    margin: 0 0 10px;
+
+    padding: 20px;
+  }
+  .title {
+    margin-left: 10px;
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    align-items: center;
+    padding: 20px;
+  }
+  p {
+    margin: 0 0 10px;
+  }
+
+  /*EXP BAR*/
+  .exp-bar {
+    background: #199cdb;
+    display: inline-block;
+    height: 4px;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 50px;
+  }
+  .exp-bar-empty {
+    background: grey;
+    height: 4px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 10px;
+    width: 50px;
+  }
+
+  /*certificate*/
+  #certificate .section-content {
+    display: grid;
+    grid-template-columns:  1fr;
+  }
+  .block {
+    flex-direction: column;
+    display: flex;
+    padding: 30px;
+    gap: 20px;
+    border-bottom: 0.5px solid orange;
+  }
+  .block2 {
+    flex-direction: column;
+    display: flex;
+    padding: 30px;
+    gap: 20px;
+    border-bottom: 0.5px solid orange;
+    border-left:none ;
+  }
+  .block3 {
+    flex-direction: column;
+    display: flex;
+    padding: 30px;
+    gap: 20px;
+  }
+  .block img {
+    flex: 0.34;
+    object-fit: contain;
+  }
+  .block-text {
+    flex: 1;
+  }
+
+  /*Project*/
+  #project .section-content {
+    display: grid;
+    grid-template-columns:  1fr;
+    gap: 20px;
+  }
+  #project .blockn {
+    flex-direction: column;
+    padding: 1px;
+  }
+  #project img {
+    width: 100%;
+  }
+  .sub {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid gray;
+  }
+  .blockn .content1 > div {
+    display: flex;
+    gap: 20px;
+
+    border-top: 1px solid gray;
+  }
+
+  .blockn .content1 > div > strong:first-child {
+    flex: 0.25;
+  }
+
+  .blockn .content1 > div > p:last-child {
+    flex: 0.75;
+  }
+
+  .blockn {
+    border: 1px solid gray;
+    display: flex;
+    padding: 30px;
+    gap: 20px;
+  }
+  /*footer*/
+  .footer {
+    display: inline-block;
+    padding: 50px;
+    padding-left: 100px;
+    grid-row: 1fr;
+  }
+  a:link,
+  a:visited {
+    text-decoration: none;
+  }
+  a:hover,
+  a:active {
+    border-bottom: none;
+    cursor: pointer;
+    background-color: lightblue;
+  }
+}

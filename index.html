@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/laptop.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <title>Assignment 03</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <div id="banner" style="padding: 20px">
+      <img
+        class="banner-img"
+src="images/default-avatar.webp"
+        alt="banner"
+      />
+      <h1 class="banner-title">Hồ Bá Vương Roman</h1>
+      <span class="more">Full Stack Developer</span>
+    </div>
+
+
+    <section id="nav-bar">
+      <nav>
+        <a href="digital-cv.html">
+          <td><i class="icon-user"></i></td>
+          Thông tin
+        </a>
+        <a href="digital-cv.html"
+          ><td><i class="icon-doc-text-inv"></i></td>
+          Lý lịch</a
+        >
+				
+        <a href="digital-cv.html">
+          <td><i class="icon-mail-alt"></i></td>
+          Chứng chỉ</a
+        >
+        <a href="digital-cv.html">
+          <td><i class="icon-star-1"></i></td>
+          Dự Án</a
+        >
+      </nav>
+			
+    </section>
+		<div class="avatar">
+			<img class="avatar-img" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJCQsJCwsMCwsLDA0QDBEODQ4MEhkSJRodJR0ZHxwpKRYlNzU2GioyPi0pMBk7IRP/2wBDAQcICAsJCxULCxUsHRkdLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCz/wAARCADIAQwDASIAAhEBAxEB/8QAGwAAAgIDAQAAAAAAAAAAAAAAAwQCBQABBgf/xAA/EAACAgEDAgQEAwgAAwcFAAABAgMRAAQSITFBBRMiUWFxgZEGMqEUI0JSscHR8DNy4RUkYmOCovEWQ1ODsv/EABoBAAIDAQEAAAAAAAAAAAAAAAECAAMEBQb/xAAhEQEBAAICAwEBAQEBAAAAAAAAAQIRAyEEEjFBIlEyYf/aAAwDAQACEQMRAD8AHZs5IHIXyc2DniZXrk7+OBcn3yd4J8FolZSecQl749L3xGXvjYAr5u+E8ONTD3wcvfD+EL5msjFWAQT9Oc6fH8Y+b47HwzSu8wLXSKov3PU5023aorKvQ0iA9ySfvlkJARzmjG/05+Qcli6BHz5/XFJvV14Pup/rjEpXmh8ucqtRIy7iV454PTLr3FcLalbDLdEWQ3YnsDl5+HfEN6HRyN64h6e1qc5iWSWuCdp9u2D0mqk0urg1CsfSwVx09J98mPSZzcenWfc5ln3OBglSaKORTYYAjC5Yzt38TmrPvmZmRGWfjmWfc5mZeRGWffNWczNYEYSfc5qz7nMJzWQWEn3yNn3/AFzZyr8U8Tj0UdDmRuFUH9cAybG1niOn0ikyOAewvkn5Zy2s8b107EQ+hex4JI+uJSSSamVpp2LE3QPQfLNqgYihQyrLk/xfjxftLNq9fFIkxmY0QWU9CM73QTefpoZQTTKG++cJrogI2PsDnY+A3/2dpL//ABJ/QYcMtl5MZj8Wln3zdn3OZmssUt2ffJKTXXB3k0PHXvhR573ObvIE9cy88rt6mJE4NyckTgnOLch0BKcQlPXG5SecRkJzRxdlpOY9ca8DbbrD0/KcUlPXGPBiBrBfcHOtxTpj5/jt9NPtUAnHU1PHuPnlEoN3yKx6GQEAXll6u2HW4sHZnU8HvXfK+cyqDjRePbRs8diMSnZaICnp8Mul2rs0QlaiaFH+Lb+Uj4jFZCm27F1yVPQfHJSyFGtet9D0OKTyKBvHF2GHxxtdg7b8M+JCWIaR29cf5b/lzqRnlXhWsfT6iKYH0kgce3e89L0mpSaONgRZUHHZ79MnqPnm8iTyvz/tm7yFZmZq83eAWZE5u81eRGs1eYcU1mrj00LyMQKXi8G0k2X8V8Uh0ELsxuQikUdSc4XUa7UaqYvIxN811AHtg/EtbPrdQ7lr5IX4LgIxQHW8puW2rHD1hxAzkdayzgiKriEIcUaGWEcjcWK+eJl/4shTxBaRhXXOw8JTy9Fp1PaNf6Zyko86eCOx6nWx8BznZwLsiRR/KBjcSnm/INfxzROavIk5ezt38ckvTB3mweMKOAP980Mme+RzyVeqjRwT9MKcE+J+mKSHriUuOyd8TlzZxEpGUdcL4W+zWxWLBNYOXDeFR79ZF8DedXjvTJz/AB1ZIG4dxghNs3HdXw98LIhHnOegFfYZTyagB9pzVe45+N0tP2lj/EecG7g/xNuvmrofU4GKZF2/u1a+7E/0GMefGQaUADhvT3/344cZoM8ichvhhwfnis0DuNosA9D1H1x4yI7MjoF4NEc5osAgA7r6TXWu2WSKrS2ljlAjVlFLwK73znYeFatgijm0AAHwzjk1Evmp7OwPHT8pGW2m1UsZFKQfLBJI4B+GOpsdr+2cAn3Xr7Y6s0ZTcGHS8446qQKTI5O69vsAMYGtbbGvPUXR+OTqlsdV5i7N5IrBx6mGQsAwscHKRtUwjYlzV0Mrodb5U5Ib85Ymz7c4LijsiRWD81CODlQviJcD1fmWx8sxJvUgvrd4LNIs3k9LEdADnF+O+I+ZK2nDcJ7dznU6mcR6aQ16un1zz3XwSHUSSHq7kn5E3leS3CdgpTG+p9hj0UR4ZgQMHpv2dKBPPTH96leCPpma2tkkrdoq0Ao473mLKB1qsWkkrjAGQgHp+mSXYWSLzwuJdRqvM6iPgfPOrHAA+GUH4ei2wCQimcljWXxOaMJqMfJd1hORJyJORJx1aV/HJKeOuBLZsNxkGRxR75DJt3weeUyeojDgnwmDbKjlZO+JyY5J3xSTvm3iJScmW/4d0pk1Bf2yofvnQ/h5mjJNcHOnxfZGLybrFYeKFoticbWsnOc1YX8w62KrOi8T/fsgHND9coNVSWKv3+GbvXXcczDLvstDJIZkU7trcWpy03xqvlki65DfxfLK3TB1qQ0U3WB3U/DGjEZxNzxW5RfIIN42MHkz7ZuaQkqaKmu/QcYddwXc5JKkECu/TIwwsnmu/Mbpww5YURfB7jGghdTIeA6OoroTVHjHkU3Imi7fLROSqtJzzw3xw8P7WWaMDo1FmNUb6/TG49OjGNhYUEB3H8oIr7d8cbRzFWQAUrmQulFrsHrfQ9saQtyQgR3ADn81qL+dnH0hsq2307V789MX2TpKGZxtRVRTXVCOGPaz3w2m1bBZYm5ZH2We9i6+dVkLsRy7eih+Ucd+AcqtTCYysgG0fme7tb4xxzLFMZgeKXcOapuKGbl2zxiiKbiRSLZSTRGFCqahhwGBZdoHJpQffLBTIER93qQX8x71lcEiRJJCt7QfuGxmDUPNuJU7OhboAT2xbNjs7NqlZTbHbW4g+/TKTUtFIxDnuevU43qFApVfc0nCr3q7oDKvUIQwLWQLIPvldiyUF0Tgi7F9Phklduinp+mQ86NSQQeVvJCZJR+7WiB98S4xZMqJdg7h9sCQHdETq7BQP+mSSQWyP+b3PTG/CdOJdcrEAhBY+eLcYPt07Dw+IQ6eJa6KB+mNE5EUqqB7ZAtlkZr22WyBbIs2QJyJBLGSU8fXAXhFPGQzj374I9cK/fAHrnl85p6XGpZBs3YyLHjKVheQdcTk745J3xOTNfErKSd86j8OxFkJINZz0cDTypGP4jWd/wCG6FNHo145K3nW8fG5Vz/Lzkmld4pGkCiVWG4Hp/0zmWaSaTcyEqzG6GdPrPDp9UzkMQpN1ktJ4V5aoJqYA2OKIzpY4uT7aUCaNmpVBVWHBIND54ZNDronUKFMYQj1UeDxtP8AY51bwadAKCjpYIA++DbToBcSL1INg1X/AIbxvXRbltUrpSsRFSU1HZt3EH5rjceiICK6MgUkglSVN+54x9FjX0hWS6HNgk37L/jHl0hli2tK0cbj1M5AAB+DG8JdqSSFIT6AF3A0x6G+pK/p2zcE8a7k3AVV8WKHNqTxWS1+u8J0IaKWeCUxBgpC/vKJ5UmMlqP1yibxrwTUErHMyS7laNJVplIocMoBPx6f5X2NpeSvHtkkIsPxasSOpogV3zFVXnJZQnlojg9PMPqXmvh/TK39qidZgzbQ0ZUPatu3V02em657fIHDaeaRb88hvSoMnJZgiC6quQCD9cPSaMzOhDMwG0hgeKFA7V4HP698UQiIAHqxBoEVQNHp88nNIGLsSlAheLATnbuI46Dp98VAmLbui7XSrqwaIo9Oe2RDCMrRyrJt2tJyoU0iDcd138hj0UEMsLJGG4jMsamwS23cf/jKbadzKu87ZDa8kkV2/v8ALLTQTmNxdsDGpFHkg9WBP1+2SxFekOsWRmKlbulAplUccfPjG10cjx7ZE2oBW9yGZu/pHt25x+Q0oJk4kdZFHAJUngf1OG8yCiAt1V03vzzijtzup0Si3Ci62Ko7A98rgG04O2PvXIu/frnVlI2LlEB4NdQGY+5OVWq0rlmZx6U9IA4F4lh8clNLIdpYqt106H9Mtfw5MjzSVfQdefpeUusSSJWPY/lHuMt/wvAymSVh+aqxNHyvTtS3A+WDLZEtgmY5FSTNg92RY5G8gig4RTxi4bCq3GQXLuOuLt1xmTvir55vkmnosK12zTZl5o5m/VuwH74pJjUmLMLzZxEPeCxq+rTd2IzvijeWg/hrON/D2l8zUK/sbzuZWCqqAdBWdzxJ/G3D8zLeei6xdFr64wIUVOQASKB45OZGdovqP6Zp5UYnc9VXXpm7bCVnj3mtiuygC1618Ri4h1kjhVtIx+ckAijfAZqws2uVHMKGQHruC2v3GFji1DAFnBToGeMrS9aU2cm9gkx0WnVZJZA8kYpEBDFj2KgDOV8Y8U8T8QlXRaVd0jFty2ywQoDVzV6mPsLzotRp105ikAtmZP3gN1bVzxVZxSeINpNBq9UwubVanUqW53bfOf02PgK+uJf8pvb1m2l8Jk/eIdejzIFJ3zHTQbiLIAiHbEPENNPpII9RrtIf2KZ5II9Zp9Qmv0yyoaKSjh1boeoNH7U0+tmdpKdqZ97bupbvzhdH4pNp9L4ropN0ul8QiXdE59CahCNs4B71a/X4cW48WP6qyyy+rPSyNpzFA8geGan0sivuVu+0Of8AF+/SzbxSBRt2miDYa6K9DRHbt9vbOS8Ndn0vieltj+zAarTN12MOw+edd4ef2mGGfaDuhQlWNAP0bplM6yuN/F2N3NjBh5b+Y7BiYwRaspXltxrnihhUIBj3SONvSlB3KSCXI60Ow+OThhO7lbBDX1I4B4qsKsFB19Qs73uhSjkACz169cdKk8J3blD3sLjsStFh9+/zyEUsaIz1QWRmq+hZhxz8L++MSfujFRO9/UL9yK4PvzzziLadW3r+8CSuoAQWAwbkgfLJkERn8QB1KjYpaEkgmyQ11Q+Xb55JfFUoKWhiANMilVZjfJG4g375zHj+tGklkhi3I25kpGO8npt3daHc9cq9PovFtVo9Zr400jQ6N4k1ELPc6rILWTZ12miLvqMmGNy7xTLKY/XqXhuq8J1Z2watC4J9PmRdfiOuO6zSREci75AG2j9s8n0qyCtVpHMcsVF0U2QPdfhnoHhXin7fpNmoYtMgAYkUb+GVS96p/wA3Cuu8OLhn2jjsOgxnwZfLQrVUcdKkimDFfc9M1FGISa6E2MGUE2zYMvkGfBFsQRC+R3ZAnI3k2IwbCq3GLBsKp4wbRQP3xV+uNP3xV+5zz3K7+CF5h6ZoZhzOuBfF2q8ZfvirHnNPGWus/DcaDm+eM6NxTknOO8C1TJIE7dM6iRyRYbtfOd7xsp6RwPJxsz7Tl1SRhjzXSuuVsmr3j8jANfa/lm5ZFYG7Pvt5xN2A9SAEHoCSrXmi5bUTE5p6VGVmXcxP5jdk9Prj0U+oRDv8xEAAYC2Reh9qoe9d8p4ZUKTRsW3EWwAs/I8XjcZUJGX2u+wKjSmmI6DlDX9PvjY0txWsix6vTPEXCMavYQyWOQRz8u+cX4l4bvh8R0kaHzPNbV6dYyPUWO6QJzXWyPn8OOoh1Pkgh4XJAB4Z24A9wLrsPTgp30WpCrJp22go0TiQwzQsRu3pIe46dv1xrNq7HjsqLblZGNMbBFMDfcHAuzCMizRN/bPRfFPwrovEi2shaRJWK+ZJpvKBY9LkgNCz7ispU/C6RSAGHxDVyKfSkscUMPH85LVWXXOSbVzfyqnw2E6bQa/VS2pnj2Rg9SpBVevuTnZ+BwhdHobUbpI45aNAK4NH0ke9/wCjI6TwIu8T67a4j3MsENqiEccluSR8hlu0UK6rRx6d+E3bgF/Khogc/UdDmTDHLdzy+1p3jJ6w1+zhUII9btQogVzZPvX+98AIvLcnYa3q35SSSOSSDY6df9u3dEiSMFRuIB4ptv0XvkDoVm2u5PJF1wSTz0GXyK9qSUxu1Q01FqcueWvcNw/QZbaTRJ5auXUGAmUcchTbk38cDH4NqIGlfzFfe7NdKD70aqz0u++S1knk6Zyoctt2BFtevpJJHt1rBl0M7eSeOSs/i+sYj+IbL7BvXY++A0epn07vNETckUunmDflaOTghh9iPiMs/H9HKrQa4Rmgqw6gHqGXoTlAzsbCigeaGNwX2wlhctb1Vt4dqNmshHZzsI9wR0zt/CtO6q7xLdH1BRZ4YrznEeB6WZ5/2uVT5cAPlg//AHJTwAPlnpf4ajmjglkathXb6h6XYkszKfazxleeP9Wjhl+RgaYblO6lbmxQHyxpCGjvqcNNJG6uAiiibrgnE4ZB6l7DpiXpbO2O1Xgt2ZMwvAb8qONuzN2BDZLdgEYH44VW4xYHDKeMCKd++KyY0/fFZOpzz/I72IWYcwZu67ZQuBcE3WBZPdgMO5JvnFnBzRxlqw8PAR1IJPPXOnaQGNT1FAZyWichgM6NWPk8ntd52PGy/lx/KnaRmpWCoeeOMX3KCzOtEClB5yHmNR4Jo9sXmmmDKFUlTybGa2QyDGsim6Fgm2J6+3bN+eU3kgAHoAysh7WT15xH9ojJ22AQSdtEHDrLJNGFDKCDfAKgr0rcOcMQ0GOwTO0UjIwKRsQrdeClrfx+mT/aHk9LRkEUVpgTZ54AW698SLyRvEztGB7BVLtQoD1/78MJ+0SlXLIldV3Fdq3xyauz2y3Gq7iso5EUrtG19xZmCFQrHmg7irxwESU7SJIL4LLRU8cjb/cHK3TIsiV5Z27TG6ldqc9iJE3Ee3OXMMSqI1HlbRwAqsNtcV0C/bLIrs0MkMe0lRuN8MbJJroBlbqBBDq4pCu0pFJJK7N/ExAHtxx+nwy2CByUUgjaL2k81ld4joo9QXYgts6RqOG46NXOGhPpnSuk0yBhakWbskV35y0YAhgB05HSuDx0zm9GZIpAZHpn3FFANqgAvdfPvlumrgoqH5od+uHH4W/TJAfbZpgSenS8S8R04aFQQDIxNVxvdORhDrIAepuhRBxbW6qObSsFbcY3WRQD0PI5r55LEiql8N02rQhXDRvuW2Ak63asMpJPwVo/N3pp0K3ywMyqCf8Ayyf751enqJUk4feDv4K7yO/z6fb44Y+XTOFJAYUXUny+Opo38qyv53DXGW9qjR/hrwtfK8/USuAp2QpsihX4bUFn75aCODTK0UZ2oorYkbEdL6kf3wg8zbUbJGWW1463zdE5WajWzwh1c3wVYEDmj8cT2PMZANTLKWI9UYFbbA5+mKjUkSlb9r6ZqSVCsjE3t6Anp8ryviYtLuOV1ZFnLJZwO7IM4we7F0JgPkwwxQNzhVbAJpWwqnjFFbDK3GLRIv3xSTvjb98Wk755/N3sQBm813zd5StCfvgThm74Aizl+AU5ooi7ix3zoCuyED4ZW+Gxmhf65bzAbK22AO5r++drx8dYuN5GW8lS0pRjz3wckjOL3dOldM3MkYJL7QCf4Xc/0H98VMukT0usrDuA+3j4E3/TNOmVBmLnkenuVFE/DN+aIgTbc8UenHywZ1vh8fA0zEAit+qbjByeI6SmC6OJlBHLTSnr15Ug5BODUJOqqCQAfy2BZPUggYeMqqM5RCxNetN7Lz6drtZB78VlJF4lDuKLp9MoH5gDKTXydzj8bjUI6pJEuyyLTg/DjDAXo8QjVU8hmYgKCoBO9nYAszhroHsT9cgnjDg0JJ2Z28oGLc7Ag8KPLHfrldF4bE8USv4hEWkIYpAEREoVZD819P8Aq2nhxQ74PEYwkRFqhQCXqaBBv5mj/iztX06PTTTRRbyzISaBdSCgIHa7yLaiR1HlEkMWa6JJ+J5GVCwymWGfU+MINMljyd4AllrgC76Zcr5Y9QYMSB+WioocA/3x5SWOTm8c1/hsmsHiMFzSNIIZYzSoG7EH3yi/+omZiqTNvHxI6e2dp49p9LrdPIrIGKqRaqTtrjPO/wDsqLS61Xn4hCOU3XTPXFkZJlJs0x2tE/EOrAI803fsMa8L/ECprYvPk/csCs3ftYND41nIeolwtksW2V37Cs6r8PeDaeJ/N1ahmHqRW6X1th3x/Ytxkd5DqvNRxwqud+xkIKUL5+OZFrUhldZAWRiATu5F/MYjK3lKWVXdEKkCIAnng0fhlbLqpQZUeMrHvBUlWpl7bSb/AK4tCOh1GpgkRXiYsm7aWXaQG9jXGU2tkkY7XWpRRQgqVZe9EcYsniUcellKUu9QrEHk/wDMpHOUcviR3OI5QSTwVJAB79RlGX1bjD0k3LR8bgfV88lFfWsrtMJWO4tZJskEHLVeFF4J2NSLZDdmmODvJQgwbnCBsWDZMNinNq2FVuMUVsKrcYDRp8WfGX74u+eey+O5Cx65o5MqT8PnmqX4k/HgZTIs2EQTwASfYdc2unckM5VFP8xFn6dckzsAQvHuRx9sGm5mAAJP+9cvwshct6dD4eqBRRuvYf5wupZRfpLe1sf7ZHw+NtlmunY/3yWpZFP5mJ9ohbfcf5zvcf8AzHE5deyuka+GjgQc8yi7+jEn9MXYzbqV1A9o9NEPsXG7/wBuFfzju2oka828rbmA96Xj74szQVsk1kkjHny9OOCPYLHY/XLFTTSFCTJNIDz/AMWSOMD6ej/+cE2v0gtUbSux6hnknJ/9KR/3wDHw6Jj/ANziU3W7VuGk+YjQO33IyEniASkj2k/wxwRpGSPdi29v0GNEEL6l2tdPEBd2NE6AE+7SuP6YaGVY2K6vygpBoiNFG6+Adlmv975WrrNVM53RKLPAXzJHUfAK1fPjGTPBtG5Y/MrrLtlYf/rj9P3Y4ah2SXQSdY1fcoPCqRXBIYrz8+c07+DtGElknVSAFYIVVT8jz+mKJPOXKFx5Y9RIjRQq102pQxjzfTGq6eNwh3byPUQT/COmDaaWDxfh3ZpoWklIBtHbdRPY883jaz+GaIskMw87UDbtLbgFHXgZSNPHI7eZDTIKWjx0s0Ov64N5NxEggjVlHAJJoXXDZPYPVcza7RsrAaghI63KL63/AL1yo8WbTarSMd63CruhsBiSB2GIzTqhewgLFQwJFg9egxLUsrgMzkcUApofDpjQPX/DnhHhsClNRLRYAKm+tosdaPfOkhKQkEHapO03TAj2B+Gc9pZHaIDm1BJU9x2OMeZJ/DPtal46qPp0w+weu15LL4tuHkOhjSyoCJvZeqrZ4yGm8V0+q3aTxExCVSHEewo0bHggdf8AGVLa7xKFvM82TaqgBKJAFAEqD/v9noJNN4kksrbBqfLWUuig2vTcoUc/HG2TSp8Wh1EOokXyxJpx6o2hdlfyz3Oz037+k4jFFBIQY5St9FnXjr2kjsf+0YXW6uZdVte1khJR9hoA3YKEckVyLPfG9J5OoO6ZF3XZkjASQ/8AMB6T9r+OV1bOjOk0skY3EWv8yEMv3GON0rNqgjFxNdd1sMPmOuDfUpe2RVfpZHpf7jj9Dk+EvaDNgy2SYRt/wn3cXtelcD+hxZnKsVPBFiji5DiOGyatihkC1yLyaOOL75Ws0dVsMrcYkJABd0AecIksRUFt1nkUa47YB0dbvi7/ACxggm6BwTqO7AfLk5wL8dyE2u8wKzcKCfesLS2SqXx+ZzwD/TNFh0JLfBfSv0yv1n6ff+I+UoIDsAT/AAr6nP24w6RtYAjVV95Tyf8A0LmlMh4SlB67BRPzPX9ctdDofMo7T2565t8fD2vTNy5+s7H0qhU9TFuOL9K/QDE9bJPZEe1R70K+5zoI9IAApHbpmP4Vp5PzV+lZ15NRysrLduA1LPZeUyTkdAWZYx9ev2rK99dOzFAAitxshAUc+56n6nPRX8D0osbAb7/5xGbwTQAuTElt14BvJtHCVukKgsWHG2IqTf8Azj0/1wJfTaffW2WTukbN5QP/AJkv52PyoZ1Gs8K0gR1iVY91hyvHHQ5S6jwNkB8t7v2B79OmNM4lm1RJqp5UZSwC2LSMbI6HYgdfreSjbYAZCQSLVF4J9r9h/vxzcumnj4UWymia4X798A0M9gbW/mvrZPxyyZSksp4aw0I6G3qFAoE+5737Y3HqDt4kH8PAIom/y/LKcho4w5B3NarfU1wW/sMD55VgST1sjG1v4G9L/wA3UeoiixVhY5sn4e+Ku2pcrusbeo5A46HjFk1jhibPpOwC+KOMb1kss9UBYPQcWQPhldmjb2WdOxNncRd9SMwIzjkEbelC91dRh2CSVRHqI5J+2F3RQrHIXG71WD3xtogv7UpMiNRj4HWiPZhfTDxSLIUMxVAaN2B6umJz6+NQxX820dOOvX/r8sq21bN8rJH04wzC0tykdO+q8qPYsiSou4EFrKndtsN9eubl1kWmfRa1ECwzMwlCqCIpeVlG33uzXfkds5uDVVIGkFx2xlUfxRMadQPkWrOh0WlGu0Pi/hsjXqdJMjI/8wI2pLz2alv5n+fLZx6nZPaWoalf2ner+Uurj2BJEP7uZJeYXBP8D9AezcH8/prYPEJIGcFWV1JVg1jaQeQRjHhzTSgaPUIXkgEqwWSC8LWJtE5vo3LR+zD/AMXDWr0CuRJ/xHhKJO9WZlZbjnI92FbsWyDKEni2pe2QHfXpK2NnxxmGeWe/MFy3+ZBW7/mHS8hBpAFNKAoo0CAx/wB9/wDQ8kLUNihQKquP0yi2fizWipGqJJBuyAT2FHoB+uHXTzPGWeT4887RllHot6qSOLJYCxfwybaZwKIpR2GAVUun5A2m6sX1HYffGEgdz5jAhEND3b5ZYCHaCaHtWbP5dtUtce+DQ7VrwytQVQqA9ff4C8KsFiyDfwrDkkH5ZJSSLw+sDYzMTdk4FsKe+CbPN13IXclqBv5ZiRsx9PX2wyx+YwUcHLvwzwti6mZWHtwCCPfLeLgy5aTk5ceOdoeGeGvIVZl4+I4OdVp9HDEo9IBxiHTxRIABXHbIySBR/jO5x8M45pxuTmvJdtMkWDPlgNtHT/e+Z5gN10rrYzCyBCV28+2WWElLTSOQaQDi+eCcq9VMFWxAzdBuHQE98sJZQ6lQWLXwBXH1xNjPGrWoYFgvLWwJ7e2VWQ8tUGshkkDEcE8jkjjKzUCeGNefzXuI6dOudBMYWmij6c75CrEki/j7ZUanbP59ITEitJYIJcL8vbuP9E0O1HIyskaSMC25mtb5K88/5wU8hIcBFDgUbvcBhnj9XmAG2AUDsB1NDpg9S6RPEV2gsjAk82BzyD3wyaMrXCEiPkswolgeDV9MDNo2WiVO0gUSVpq60Ab4+WNvKsJVuoNhitEl2s84nqJQHUjlCoaqKm7qsuw3+K7ou5onZR5HQG/T0PJzG1Eg4qr5Nc3gSXY2tjnjr3zZj92uuynkffNOp+qq0NTIGuzXNZF5ZHqyeAB3wiwEjcGVeO55+2Z5SL3J98O8Q1QTbKASfSW+x5zYjagSOvT5fTCCO2IUg1RZq4H3wximr8rdQCT2vnrhuQaRjUIo9PI337HcoAFZfeFPOup8JnjB/wC96WTwuY9QXjPlxsflUZ+mVsGmaRlTpyHa/YGjxnQaLTs0OlPKeT4gWWuptIzQ+2V+wyNarQmTXCeJWQS7NS1cbJB6ttn45ZTR2ySbQE1GnIlWq5BsDLHUIt8D1bmII/hsnjBvpZJBABQWNKIHck2TlNy7PJ0rYoBXck9T8BwBlhFp7VQR/vthItNs646m1QB7Yh2wgRFFc9TgJE/Tn64dpOMUeQ2fbvgRoLyb+P1wciWb6cYRTfPbNSOP/nIgGwV+uQAAyZbI9e2FEjdnIMMzMzzTu0XSxM0q7RfIzufDk2xLuFEAWDzmZmdnwpPXbleXbvRuV+OBWVWoldQxNGu1HMzM22schZdZuBBUbh+Whyfni/7duLJu2gcXR69OczMyurIjLqkjumBIAJCqdxPyOCl1syx+YVjKMGUc2Ae5avbMzMTfZ1RJPNqZPLZIRGu5S8bbDsr8tD7n55VS/tcClS4AoM9KaF/lUfEgE/X4ZmZjwtVohlkZgGktVPF+kKeXIHWz3yr1fmGSEDbTRqFRuQa9JBJ+XvmZmPhe0y+AyrMGJe2ChSCp710u82sTeWSQpLgUHAHftXOZmZZvomg1jnc7FVrALAcbR78nCjS0bcF6O5gKF89LOZmY1oaSMRJBKqDR6EhRXxPOaESqhcXQ9LEcj2rnMzMkoViLxv2AIrACxxfcC+MbSEuTt3EEl33dAOSAczMyWostD4c023duFlW9PU7ev0zp9LoBGkSKDYYyEk9zWZmZXlRkMulOSRfIyYIo8ZmZiHBdjZ4yUdEruvaSAfl3zMzIlHeHTFwv7SvAFtXpu9lD68/LnFJYoPLMiTXIeVjYAEA3yx6diT81/m4zMx+i7rHi0oaRlm9C72ChlYlRvoLR5JoUOvPOZJpIldkMx3LJ5b2yKAQATQbnuR8KN9czMxtREX0unDALKWRY5mZgU3O6s+xVX4gD74Q6TTpQ83dy35SCKDEC6HcUfrmZmCo//9k=" alt="My avatar"  width="50px" height="50px" >
+		</div>
+
+
+    <section id="about" class="bg-grey">
+      <div class="target-info">
+        <div id="target">
+          <h1 class="section-title">Mục tiêu nghề nghiệp</h1>
+          <p>
+            Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp
+            của FUNiX. Em mong muốn mình sẽ được làm việc với vị trí
+            <b>Fullstack Developer</b>, có thể vận dụng những kiến thức đã được
+            trau dồi và không ngừng học hỏi để phát triển bản thân, cũng như
+            hoàn thành tốt nhất công việc được giao.
+          </p>
+        </div>
+        <div id="personal-info" class="info">
+          <h1 class="section-title">Thông tin cá nhân</h1>
+          <div class="section-content">
+          <strong><span>Giới tính</span></strong>
+          : Nam
+          <br />
+          <strong><span>Ngày sinh</span></strong>
+          : 07/02/2007
+          <br />
+          <strong><span>Điện thoại</span></strong>
+          : (+84) 796602405
+          <br />
+          <strong><span>Email</span></strong> : romanhbvfx28220@funix.edu.vn <br />
+          <strong><span>Địa chỉ</span> </strong>: mậu thân, tuy hòa,Phú yên<br />
+          <strong><span>Website</span></strong> : https://abc.tech <br />
+          <br />
+          <td><i class="icon-twitter"></i></td>
+          <td><i class="icon-facebook"></i></td>
+          <td><i class="icon-gplus"></i></td>
+          <td><i class="icon-linkedin"></i></td>
+          </div>
+          <div class="submit-email">
+            <input type="email" id="email">
+            <p id="error"></p>
+            <button onclick="handlesubmit()" type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="job-info">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-sm-12 col-md-6 col-lg-4" >
+            <div  onmouseover="handleonmouseover(this)" onmouseout="handleonmouseout(this)"class="parent">
+            <h2 class="title">Kinh Nghiệm   <td><i class="ic-toolbox" style="font-size:48px;"></i></td></h2>
+            <div class="content">
+            <ul>
+              <strong style="font-size: 20px;">Công ty Y  </strong> 
+              <div style="font-style: italic;"><br>05/2022- <span style="background-color:blue; border: 3px solid blue; color: white; font-family:sans-serif; font-size: 10; border-radius: 5px; font-style: italic;">Hiện tại</span></div>
+              <div>
+                <br />Full Stack Developer <br />-
+                Xây dựng, phát triển Website dựa trên thiết kế và yêu cầu đã có.
+                <br />- Phân tích và thiết kế Database, sử dụng các hệ quản trị
+                CSDL (MySQL, SQLServer, NoSQL, …) và viết được các câu truy vấn.
+                <br />- Sử dụng ngôn ngữ server-side (Python, Java, …) để xây
+                dựng các Web Server <br>
+                <br>
+                <br>
+              </div>
+              <strong>Công ty X</strong> 
+              <div style="font-style: italic;"><br>06/2021-04/2022</div>
+              <div>
+              <br />Web Designer <br />- Thiết kế
+                Website dự trên yêu cầu của khách hàng. <br />- Sử dụng các công
+                cụ: Figma, Canva, PTS.    
+                </div>
+              </div>
+            <div >
+              <button type="button"  class="btn btn-warning view-more control-view" onclick=handleviewmore(this)>View More</button>
+            </div>
+    
+        </div>
+      </div>  
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="parent" onmouseover="handleonmouseover(this)" onmouseout="handleonmouseout(this)">
+           <h2 class="title">Học Vấn  <td><i class="ic-pencil" style="font-size:48px;"></i></td> </h2>
+           <div class="content" >
+         <ul>
+          <strong style="font-size: 20px;">FUNIX </strong> 
+           <div style="font-style: italic;"><br>06/2021-5/2022 </div>
+         <div> 
+         <br />-Tốt nghiệp chứng chỉ doanh
+          nghiệp nhánh Fullstack.<br />-GPA: 9 / 10
+           <br>
+           <br>
+        </div>
+          <strong>Cử nhân-ĐH FPT</strong>
+          <div><br>08/2016-07/2019</div>
+         <div>
+          <br />-Chuyên ngành: Kỹ
+       thuật phần mềm.<br /><br>-GPA: 3.2 / 4
+         </div>
+         <br>
+          <strong>Đại Học Hà Nội</strong>
+          <div><br>08/2016-02/2018</div>
+           <div>
+          <br />-Hệ từ xa, Chuyên ngành:Ngôn ngữ Nhật.<br /><br>-GPA: 3.2 / 4
+           </div>
+           </div>
+           <div >
+            <button type="button"  class="btn btn-warning view-more control-view" onclick=handleviewmore(this)>View More</button>
+          </div>
+</div>
+         </div>
+          
+            
+            <div class="col-sm-12 col-md-6 col-lg-4" >
+              <div class="parent" onmouseover="handleonmouseover(this)" onmouseout="handleonmouseout(this)">
+              <h2 class="title">Hoạt động <td><i class="ic-toolbox" style="font-size:48px;"></i></td></i></td>  </h2>
+              <div class="content">
+              <ul>
+                <strong style="font-size: 20px;">FPT Edu Hackathon 2019</strong> 
+                <div style="font-style: italic;"><br>03/2019-05/2019 </div>
+                <div> 
+                  <br />-Giải 3 bảng A
+                <br />-Đề
+                tài: Trang web về phân loại rác thải
+                  <br>
+                  <br>
+                </div>
+                <strong>Câu lạc bộ Z</strong>
+                <div><br>08/2016-08/2017</div>
+                <div>
+                   <br />-Trưởng ban chuyên môn.<br /><br>
+                </div>
+                <br>
+                <strong>Câu lạc bộ Z</strong>
+                <div><br>08/2016</div>
+                <div>
+                   <br />-Hỗ trợ tổ chức tuần lễ văn hóa Việt Nam - Nhật Bản
+                </div>
+              </div>
+             
+              <div >
+                <button type="button"  class="btn btn-warning view-more control-view" onclick=handleviewmore(this)>View More</button>
+              </div>
+    </div>
+      </div>
+       
+        <!--COT 3-->
+      
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div class="parent" onmouseover="handleonmouseover(this)" onmouseout="handleonmouseout(this)">
+              <h2 class="title">Sở thích  <td><i class="ic-telescope" style="font-size:48px;"></i></td></h2>
+              <div class="content">
+              <td><i class="ic-megaphone" style="width: 40px;  height: 40px; border: 1.5px solid green; border-radius: 50%; padding: 10px; margin-left: 20px;" ></i></td>  
+              <td><i class="ic-hotairballoon" style="width: 40px;  height: 40px; border: 1.5px solid green; border-radius: 50%; padding: 10px;margin-left: 20px;"  ></i></td>
+              <td><i class="ic-strategy" style="width: 40px;  height: 40px; border: 1.5px solid green; border-radius: 50%; padding: 10px;margin-left: 20px;" ></i></td>
+              <td><i class="ic-basket" style="width: 40px;  height: 40px; border: 1.5px solid green; border-radius: 50%; padding: 10px;margin-left: 20px;" ></i></td>
+              <div style="margin-left: 10px;">
+               
+              <span >Âm nhạc</span> <span style="margin-left: 4px;">Du lịch</span> <span style="margin-left: 4px;">Chơi game</span> <span style="margin-left: 10px;">Nấu ăn</span>
+              <br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+          </div>
+          <div >
+            <button type="button"  class="btn btn-warning view-more control-view" onclick=handleviewmore(this)>View More</button>
+          </div>
+</div>
+            </div>
+
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div class="parent" onmouseover="handleonmouseover(this)" onmouseout="handleonmouseout(this)">
+              <h2 class="title">Ngôn Ngữ   <td><i class="ic-mic" style="font-size:48px;"></i></td></h2>
+              <div class="content">
+              <div style="padding-left: 20px;">
+              <strong>ENGLISH-IELTS 7.0<br></strong>
+              <span>
+                <div class="exp-bar">
+                </div>
+                <div class="exp-bar">
+                </div>
+                <div class="exp-bar-empty">
+                </div>
+              </span> <br><br><br>
+              <strong >Japanese-N3</strong> <br>
+              <span>
+                <div class="exp-bar">
+                </div>
+                <div class="exp-bar">
+                </div>
+                <div class="exp-bar">
+                </div>
+              </span>
+            </div>
+          </div>
+          <div >
+            <button type="button"  class="btn btn-warning view-more control-view" onclick=handleviewmore(this)>View More</button>
+          </div>
+</div>
+            </div>
+
+              
+
+
+            <div class="col-sm-12 col-md-6 col-lg-4" >
+              <div class="parent" onmouseover="handleonmouseover(this)" onmouseout="handleonmouseout(this)">
+              <h2 class="title">Kỹ Năng  <td><i class="ic-tools-2"  style="font-size:48px;"></i></td></h2>
+              <div class="content">
+              <div style="padding-left: 20px;">
+                <strong >HTML/CSS:Fundamental</strong> <br>
+                  <span>
+                    <div class="exp-bar">
+                    </div>
+                    <div class="exp-bar">
+                    </div>
+                    <div class="exp-bar-empty">
+                    </div>
+                  </span><br><br>
+                <strong>Javascript:Intermediate</strong><br>
+                <span>
+                  <div class="exp-bar">
+                  </div>
+                  <div class="exp-bar">
+                  </div>
+                  <div class="exp-bar-empty">
+                  </div>
+                </span><br><br>
+                <strong>NodeJS:Intermediate </strong><br>
+                <span>
+                  <div class="exp-bar">
+                  </div>
+                  <div class="exp-bar">
+                  </div>
+                  <div class="exp-bar">
+                  </div>
+                </span><br><br>
+                <strong>Bootstrap 5:Fundamental</strong><br><span>
+                  <div class="exp-bar">
+                  </div>
+                  <div class="exp-bar-empty">
+                  </div>
+                  <div class="exp-bar-empty">
+                  </div>
+                </span>
+              </div>
+            </div>
+            <div >
+              <button type="button"  class="btn btn-warning view-more control-view" onclick=handleviewmore(this)>View More</button>
+            </div>
+  </div>
+          </div>
+        </div>
+    </section>
+
+
+
+    <section id="certificate" class="bg-grey">
+      <div class="container-s"> 
+        <h1 class="section-title">Chứng chỉ - Giải thưởng</h1>
+        <div class="section-content">
+          <div class="block">
+            <img src="images/Cert_WEB.png" alt="pic" width="300" />
+            
+              <strong class="section-title" style="font-size: 17px;">CHỨNG CHỈ LẬP TRÌNH WEB-FUNIX</strong>
+              <p>
+                -Chứng chỉ thuộc chương trình CCDN <br> 
+                -GPA:8.6
+              </p>
+          
+          </div>
+          <div class="block2">
+            <img src="images/Cert_PRF.png" alt="pic" width="300" />
+       
+              <strong class="section-title" style="font-size: 17px;">CHỨNG CHỈ LẬP TRÌNH JAVASCRIPT</strong>
+              <p>
+                -Chứng chỉ thuộc chương trình CCDN <br> 
+                -GPA:8.9
+              </p>
+          </div>
+       
+            <div class="block3">
+            <img src="images/Cert_DBI.png" alt="pic" width="300" />
+            
+              <strong class="section-title" style="font-size: 17px;">CHỨNG CHỈ THIẾT KẾ DATABASE-FUNIX</strong>
+              <p>
+                -Chứng chỉ thuộc chương trình CCDN<br> 
+                -GPA:8.0
+              </p>
+            </div>
+       
+
+        </div>
+      </div>
+    </section>
+
+    <section id="project">
+      <div class="container-d">
+        <h1 class="section-title">Dự án</h1>
+      <div class="section-content">
+        
+         <!--block1-->
+        <div class="blockn">
+          <div class="project-cv" > <img src="images/project_1.png" alt="cv" /> </div>
+          <h3>CV CÁ NHÂN</h3>
+          <div class="sub">
+            <td><i class="year"></i></td>
+            <td>2021</td>   
+  
+            <td><i class="icon-user-1"></i></td>
+            <td>FUNIX</td>    
+  
+            <td><i class="icon-lamp"></i></td>
+            <td>Developer</td>
+          </div>
+          <div class="content1">
+            <div>
+              <strong>Mô tả</strong>
+                  <p>Trang Web CV cá nhân online. Gồm các
+                    thông tin cá nhân cũng như kỹ năng nghề nghiệp.</p>
+            </div>
+            <div>
+                  <strong>Nhiệm vụ</strong>
+                  <p>Phát triển code - Review code - tối ưu code - xử lý lỗi.</p>
+            </div>
+            <div>
+                   <strong>Công nghệ</strong> 
+                   <p>HTML, CSS.</p>
+            </div>
+         </div>
+        </div>
+      <!--block2-->
+        <div class="blockn">
+          <div class="project-pet" > <img src="images/project_2.png" alt="pet" /> </div>
+          <h3>TRANG WEB QUẢN LÝ THÚ CƯNG</h3>
+          <div class="sub">
+            <td><i class="year"></i></td>
+            <td>2021</td>   
+  
+            <td><i class="icon-user-1"></i></td>
+            <td>FUNIX</td>    
+  
+            <td><i class="icon-lamp"></i></td>
+            <td>Developer</td>
+          </div>
+          <div class="content1">
+            <div>
+              <strong>Mô tả</strong>
+                  <p>Trang Web xem tin tức từ nhiều nguồn
+                  khác nhau, người dùng có thể tìm kiếm các tin tức dựa theo các
+                  từ khóa.</p>
+            </div>
+            <div>
+                  <strong>Nhiệm vụ</strong>
+                  <p>Phát triển code - Review code - tối ưu code - xử lý lỗi.</p>
+            </div>
+            <div>
+                   <strong>Công nghệ</strong> 
+                   <p>HTML, CSS,Javascript.</p>
+            </div>
+          </div> 
+      
+      </div>
+        <!--block3-->
+
+          <div class="blockn">
+            <div class="project-cv" ><img src="images/project_3.png" alt="search" /></div>
+            <h3>TRANG WEB XEM TIN TỨC</h3>
+            <div class="sub">
+              <td><i class="year"></i></td>
+              <td>2021</td>   
+    
+              <td><i class="icon-user-1"></i></td>
+              <td>FUNIX</td>    
+    
+              <td><i class="icon-lamp"></i></td>
+              <td>Developer</td>
+            </div>
+            <div class="content1">
+              <div>
+                <strong>Mô tả</strong>
+                    <p>Trang Web xem tin tức từ nhiều nguồn
+                      khác nhau, người dùng có thể tìm kiếm các tin tức dựa theo các
+                      từ khóa.</p>
+              </div>
+              <div>
+                    <strong>Nhiệm vụ</strong>
+                    <p>Phát triển code - Review code - tối ưu code - xử lý lỗi.</p>
+              </div>
+              <div>
+                     <strong>Công nghệ</strong> 
+                     <p>HTML, CSS,Javascript</p>
+              </div>
+            </div> 
+          </div>
+        </div>
+        </div>
+      </div>
+     </div>
+    </section>
+
+    <section id="footer" class="bg-grey">
+      <div class="container">
+        <div class="footer">
+          <td><i class="icon-facebook"style="border:2px solid blue; border-radius:100px; background-color:blue; color:white; font-size:20px;"></i><a href="#" >Facebook</a></td>
+          <span> &nbsp; &nbsp; &nbsp; &nbsp;</span>        <td><i class="icon-linkedin"style="border:2px solid blue; border-radius:100px; background-color:blue; color:white; font-size:20px;"></i><a href="#" >Linkedin</a></td>
+          
+          <span> &nbsp; &nbsp; &nbsp; &nbsp;</span><td><i class="icon-github-circled" style=" color:blue; font-size:35px;"></i><a href="#" >Github</a></td>
+     </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
